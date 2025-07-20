@@ -1,0 +1,118 @@
+/* start of global rules */
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--grey-900);
+}
+
+/* end of global rules */
+
+.profile {
+  background-color: var(--grey-800);
+  width: 20rem;
+  padding: 2.5rem 1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.profile header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.profile header img {
+  width: 3.75rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-bottom: 1.25em;
+}
+
+.profile header h1 {
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+
+.profile header p:first-of-type {
+  color: var(--green);
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.profile header p:last-of-type {
+  color: white;
+  margin-bottom: 1.5em;
+}
+
+.profile .links {
+  text-transform: capitalize;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.profile .links li {
+  width: 100%;
+}
+
+.profile .links li a {
+  text-decoration: none;
+  color: white;
+  background-color: var(--grey-700);
+  display: block;
+  width: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+.profile .links li a:hover,
+.profile .links li a:focus {
+  color: var(--grey-900);
+  background-color: var(--green);
+  outline: 0;
+}
